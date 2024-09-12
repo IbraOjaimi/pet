@@ -1,12 +1,12 @@
-// const express = require('express');
-// const router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-// const pet_controller = require('../controllers/pet_controller.js');
+const pet_controller = require('../controllers/pet_controller.js');
 
-// router.post('/', pet_controller.createPet);
-// router.get('/', pet_controller.getPet);
+router.post('/', pet_controller.createPet);
+router.get('/', pet_controller.getPet);
 // router.get('/:id', pet_controller.getPetById);
-// router.put('/:id', pet_controller.updatePet);
-// router.delete('/:id', pet_controller.deletePet);
+router.put('/:id', pet_controller.updatePet);
+router.delete('/:id', pet_controller.deletePet);
 
-// module.exports = router
+module.exports = router

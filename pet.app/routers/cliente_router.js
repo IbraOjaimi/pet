@@ -6,7 +6,7 @@ const cep_endereco = require('../middlewares/cep_endereco.js');
 
 router.post('/', cep_endereco, cliente_controller.createCliente);
 router.get('/', cliente_controller.getCliente);
-router.get('/:id', cliente_controller.getClienteById);
+// router.get('/:id', cliente_controller.getClienteById);
 router.put('/:id', cliente_controller.updateCliente);
 router.delete('/:id', cliente_controller.deleteCliente);
 
